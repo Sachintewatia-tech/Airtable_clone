@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Home from './Components/Home';
+import WithSubnavigation from './Components/Navbar';
 function App() {
   return (
     <div className="App">
-      
-          </div>
+      <WithSubnavigation/>
+      <Home/>
+    </div>
   );
 }
 
