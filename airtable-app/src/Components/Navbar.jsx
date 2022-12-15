@@ -17,12 +17,7 @@ import {
     useColorMode,
     useDisclosure,
   } from '@chakra-ui/react';
-  import {
-    HamburgerIcon,
-    CloseIcon,
-    ChevronDownIcon,
-    ChevronRightIcon,MoonIcon, SunIcon
-  } from '@chakra-ui/icons';
+  import {HamburgerIcon,CloseIcon,ChevronDownIcon,ChevronRightIcon,MoonIcon, SunIcon} from '@chakra-ui/icons';
 
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -83,13 +78,14 @@ import {
               Sign In
             </Button>
             <Button
+              as={'a'}
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'20px'}
               fontWeight={700}
               color={'white'}
               bg={'#0768f8'}
                borderRadius={'5px'} padding={'2px'}
-              href={'#'}
+              href={"/signup"}
               _hover={{
                 bg: 'pink.300',
               }}>
