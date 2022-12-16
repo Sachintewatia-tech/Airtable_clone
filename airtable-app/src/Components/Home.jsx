@@ -2,6 +2,7 @@ import './style.css'
 import Videos from './Videos';
 import { Button,Box,img } from '@chakra-ui/react';
 import Withvideo from './forvideos';
+import Footer from './footer';
 // import WithSubnavigation from './Navbar';
 function Home(){
 
@@ -52,11 +53,11 @@ function Home(){
                     <Button
                         display={{ base: 'none', md: 'inline-flex' }}
                         fontSize={'20px'}
-                        fontWeight={700}
+                        fontWeight={700} as={'a'}
                         color={'white'}
                         bg={'#0768f8'}
                         borderRadius={'8px'} padding={'7px'} width={"auto"}
-                        href={'#'} margin={'30px 0 30px 0 '}
+                        href={'/'} margin={'30px 0 30px 0 '}
                         _hover={{
                             bg: 'pink.300',
                         }}> Learn about Sync--
@@ -90,11 +91,11 @@ function Home(){
                 <Button
                         display={{ base: 'none', md: 'inline-flex' }}
                         fontSize={'20px'}
-                        fontWeight={700}
+                        fontWeight={700} as={'a'}
                         color={'white'}
                         bg={'#0768f8'}
                         borderRadius={'8px'} padding={'7px'} width={"auto"}
-                        href={'#'} margin={'30px 0 30px 0 '}
+                        href={'/signup'} margin={'30px 0 30px 0 '}
                         _hover={{
                             bg: 'pink.300',
                         }}> Signup for free
@@ -102,6 +103,7 @@ function Home(){
                 
             </div>
     </div>
+<Footer/>
 </div>
     )
 }

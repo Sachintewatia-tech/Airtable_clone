@@ -74,7 +74,7 @@ import {
             //   border={'1px solid black'}
               bg={'rgb(217, 216, 216)'}
               borderRadius={'5px'} padding={'2px'}
-              href={'#'}>
+              href={'login'}>
               Sign In
             </Button>
             <Button
@@ -259,7 +259,7 @@ import {
   
   const NAV_ITEMS = [
     {
-      label: 'Inspiration >',
+      label: 'Product >',
       children: [
         {
           label: 'Explore Design Work',
@@ -274,7 +274,7 @@ import {
       ],
     },
     {
-      label: 'Find Work >',
+      label: 'Solutions >',
       children: [
         {
           label: 'Job Board',
@@ -289,7 +289,7 @@ import {
       ],
     },
     {
-      label: 'Learn Design >',
+      label: 'Pricing >',
       href: '#',
     },
     {
