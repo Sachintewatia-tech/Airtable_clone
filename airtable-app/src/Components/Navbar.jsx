@@ -23,7 +23,7 @@ import {
     const { isOpen, onToggle } = useDisclosure();
     const { colorMode, toggleColorMode } = useColorMode();
     return (
-      <Box>
+      <Box position={'sticky'} top={0} >
         <Flex
           bg={useColorModeValue('white', 'white')}
           color={useColorModeValue('gray.600', 'white')}
@@ -290,7 +290,7 @@ import {
     },
     {
       label: 'Pricing >',
-      href: '#',
+      href: '/pricing',
     },
     {
       label: 'Hire Designers >',
