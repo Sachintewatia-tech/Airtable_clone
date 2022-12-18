@@ -13,7 +13,6 @@ function Home(){
 
   return(
     <div>
-      {/* <WithSubnavigation/> */}
       <div id="cont">  
 
         <div className="home">
