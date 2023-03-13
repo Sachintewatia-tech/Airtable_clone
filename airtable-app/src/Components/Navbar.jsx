@@ -65,32 +65,24 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-            <Button
-              as={'a'}
-              fontSize={'20px'}
+           
+            <Link href='/login' fontSize={'20px'}
               fontWeight={600}
               variant={'link'}
               color={'black'} 
-            //   border={'1px solid black'}
               bg={'rgb(217, 216, 216)'}
-              borderRadius={'5px'} padding={'2px'}
-              href={'login'}>
-              Sign In
-            </Button>
-            <Button
-              as={'a'}
+              borderRadius={'5px'} padding={'2px'}>SignIn</Link>
+            <Link href='/signup'
               display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'20px'}
+              fontSize={'20px'} w={'40'}
               fontWeight={700}
               color={'white'}
               bg={'#0768f8'}
-               borderRadius={'5px'} padding={'2px'}
-              href={"/signup"}
+               borderRadius={'5px'} padding={'1px'}
               _hover={{
-                bg: 'pink.300',
-              }}>
-              Sign Up for free
-            </Button>
+                bg: 'pink.300',color:"black"
+              }}
+            >SignUp for Free</Link>
 
             <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
@@ -290,7 +282,7 @@ import {
     },
     {
       label: 'Pricing >',
-      href: '/pricing',
+      href: 'pricing',
     },
     {
       label: 'Hire Designers >',
